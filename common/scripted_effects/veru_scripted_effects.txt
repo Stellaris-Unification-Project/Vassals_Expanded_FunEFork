@@ -658,10 +658,7 @@ get_ethics_check_egal_auth = {
 	if = {
 		limit = {
 			event_target:chosen_subject = {
-				OR = {
-					has_ethic = ethic_egalitarian
-					has_ethic = ethic_fanatic_egalitarian
-				}
+				is_egalitarian = yes
 			}
 		}
 		event_target:chosen_subject = {
@@ -681,10 +678,7 @@ get_ethics_check_egal_auth = {
 	if = {
 		limit = {
 			event_target:chosen_subject = {
-				NOR = {
-					has_ethic = ethic_authoritarian
-					has_ethic = ethic_fanatic_authoritarian
-				}
+				is_authoritarian = no
 			}
 		}
 		event_target:chosen_subject = {
@@ -698,10 +692,7 @@ get_ethics_check_auth_egal = {
 	if = {
 		limit = {
 			event_target:chosen_subject = {
-				OR = {
-					has_ethic = ethic_authoritarian
-					has_ethic = ethic_fanatic_authoritarian
-				}
+				is_authoritarian = yes
 			}
 		}
 		event_target:chosen_subject = {
@@ -721,10 +712,7 @@ get_ethics_check_auth_egal = {
 	if = {
 		limit = {
 			event_target:chosen_subject = {
-				NOR = {
-					has_ethic = ethic_egalitarian
-					has_ethic = ethic_fanatic_egalitarian
-				}
+				is_egalitarian = no
 			}
 		}
 		event_target:chosen_subject = {
@@ -804,10 +792,7 @@ get_new_autocratic_gov = {
 	if = {
 		limit = {
 			event_target:chosen_subject = {
-				OR = {
-					has_ethic = ethic_egalitarian
-					has_ethic = ethic_fanatic_egalitarian
-				}
+				is_egalitarian = yes
 			}
 		}
 		event_target:chosen_subject = {
